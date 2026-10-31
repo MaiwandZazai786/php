@@ -7,6 +7,11 @@
    $config = require 'config.php';
 
    $db = new database($config['database']);
-   $users = $db->query('select * from users')->fetchAll(PDO::FETCH_ASSOC);
+
+   $id = $_GET['id'];
+
+   $query = "select * from users where id = ?";
+
+   $users = $db->query($query, [$id])->fetchAll(PDO::FETCH_ASSOC);
 
    require 'views/index.view.php';
