@@ -7,7 +7,8 @@ $navigation = [
     '/' => 'controllers/index.php',
     '/about' => 'controllers/about.php',
     '/contact' => 'controllers/contact.php',
-    '/services' => 'controllers/services.php'
+    '/services' => 'controllers/services.php',
+    '/notes' => 'controllers/notes.php'
 ];
 
 if (array_key_exists($uri, $navigation)) {

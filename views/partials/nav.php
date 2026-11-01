@@ -39,6 +39,11 @@
                                class="rounded-md px-3 py-2 text-sm font-medium <?php activeClass('/services') ?>">
                                Services
                            </a>
+                           <a href="/notes"
+                               aria-current="page"
+                               class="rounded-md px-3 py-2 text-sm font-medium <?php activeClass('/notes') ?>">
+                               Notes
+                           </a>
 
                        </div>
                    </div>
